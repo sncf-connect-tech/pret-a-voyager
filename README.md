@@ -1,1 +1,3 @@
-# pret-a-voyager
+# Plateforme prêt à voyager
+
+En vertu de l’[arrêté du 24 août 2021 pris en application du III de l'article 2-3 du décret n° 2021-699 du 1er juin 2021 prescrivant les mesures générales nécessaires à la gestion de sortie de crise sanitaire](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044111554), SNCF voyageurs rend public les fonctions manipulant les données du pass sanitaire dans le cadre de sa plateforme “Prêt à voyager”. 
