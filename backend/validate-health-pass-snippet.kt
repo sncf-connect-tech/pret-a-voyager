@@ -41,5 +41,15 @@ private suspend fun validateHealthPass(
         }
 }
 
+private suspend fun saveResultToDatabase(
+    ticketId: String,
+    travelDate: OffsetDateTime,
+    result: Result<Unit, HealthPassError>
+) {
+    controlDynamoDbDAO.save(
+        ControlEntity(ticketId, result is Ok, ttl = travelDate.plusDays(1).toEpochSecond())
+    )
+}
+
 fun normalizeName(name: String) =
     StringUtils.stripAccents(name).trim().uppercase().replace("-", " ")
